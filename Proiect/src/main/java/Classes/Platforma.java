@@ -10,6 +10,14 @@ public class Platforma {
     private final List<Curs> cursuri;
     private final List<Meeting> meetings;
 
+    public Platforma(String nume) {
+        this.nume = nume;
+        this.users = new ArrayList<User>();
+        this.profesori = new ArrayList<Profesor>();
+        this.cursuri = new ArrayList<Curs>();
+        this.meetings = new ArrayList<Meeting>();
+    }
+
     public Platforma(String nume, List<User> users, List<Profesor> profesori, List<Curs> cursuri, List<Meeting> meetings) {
         this.nume = nume;
         this.users = users;
@@ -49,6 +57,8 @@ public class Platforma {
     public void addCurs(Curs curs) {
         cursuri.add(curs);
     }
+
+    public void addMeeting(Meeting meeting) { meetings.add(meeting); }
 
     @Override
     public String toString() {

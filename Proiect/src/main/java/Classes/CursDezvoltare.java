@@ -1,5 +1,7 @@
 package Classes;
 
+import Enums.CursTypes;
+
 public class CursDezvoltare extends Curs{
     public String categorie;
 
@@ -11,6 +13,7 @@ public class CursDezvoltare extends Curs{
     public CursDezvoltare(Curs curs, String categorie) {
         super(curs);
         this.categorie = categorie;
+        this.tipCurs = CursTypes.CursDezvoltare;
     }
 
     public String getCategorie() {
