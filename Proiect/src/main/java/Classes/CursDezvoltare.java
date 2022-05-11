@@ -8,6 +8,7 @@ public class CursDezvoltare extends Curs{
     public CursDezvoltare(String nume, String categorie) {
         super(nume);
         this.categorie = categorie;
+        this.tipCurs = CursTypes.CursDezvoltare;
     }
 
     public CursDezvoltare(Curs curs, String categorie) {

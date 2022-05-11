@@ -2,11 +2,12 @@ import Classes.Platforma;
 import Classes.Profesor;
 import Query.Get;
 
+import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Get operatii = new Get();
 
         Platforma platforma = new Platforma("Udemy", Arrays.asList(Entries.user1, Entries.user2, Entries.user3),
@@ -24,5 +25,9 @@ public class Main {
         System.out.println(operatii.getMeetingByCurs(platforma, Entries.cursInfo));
         System.out.println(operatii.getMeetingByDurata(platforma, 4));
         System.out.println(operatii.getMeetingByProfesor(platforma, Entries.profesor3));
+
+        Platforma platforma1 = operatii.Read("src/main/resources/Udemy");
+
+        System.out.println(platforma1);
     }
 }
