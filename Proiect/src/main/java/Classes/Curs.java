@@ -12,6 +12,14 @@ public class Curs {
         return nume;
     }
 
+    public CursTypes getTipCurs() {
+        return tipCurs;
+    }
+
+    public void setTipCurs(CursTypes tipCurs) {
+        this.tipCurs = tipCurs;
+    }
+
     public Curs(String nume) {
         this.nume = nume;
     }

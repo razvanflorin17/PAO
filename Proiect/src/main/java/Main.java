@@ -1,10 +1,8 @@
 import Classes.Platforma;
-import Classes.Profesor;
 import Query.Get;
 
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {

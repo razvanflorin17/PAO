@@ -14,13 +14,13 @@ public class CursInformatica extends Curs{
     {
         super(nume);
         this.limbaj = limbaj;
-        this.tipCurs = CursTypes.CursInfo;
+        this.tipCurs = CursTypes.CURS_INFO;
     }
 
     public CursInformatica(String nume)
     {
         super(nume);
-        this.tipCurs = CursTypes.CursInfo;
+        this.tipCurs = CursTypes.CURS_INFO;
     }
 
     @Override

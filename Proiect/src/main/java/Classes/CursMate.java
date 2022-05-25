@@ -14,13 +14,13 @@ public class CursMate extends Curs{
     {
         super(nume);
         this.categorie = categorie;
-        this.tipCurs = CursTypes.CursMate;
+        this.tipCurs = CursTypes.CURS_MATE;
     }
 
     public CursMate(String nume)
     {
         super(nume);
-        this.tipCurs = CursTypes.CursMate;
+        this.tipCurs = CursTypes.CURS_MATE;
     }
 
     @Override

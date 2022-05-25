@@ -7,7 +7,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 public class Get {
@@ -20,7 +20,7 @@ public class Get {
 
     private void WriteLog(String name) throws IOException {
         Writer writer = Writer.getWriter();
-        writer.Write(log, name + "," + new Date() + "\n");
+        writer.Write(log, name + "," + LocalDate.now() + "\n");
     }
 
     public List<User> getUserByNume(Platforma platforma, String nume) throws IOException {
@@ -151,15 +151,15 @@ public class Get {
             String nume = info.get(1);
             String categorie = info.get(2);
 
-            if(tipCurs == CursTypes.CursMate) {
+            if(tipCurs == CursTypes.CURS_MATE) {
                 CursMate cursMate = new CursMate(nume, categorie);
                 cursuriList.add(cursMate);
             }
-            if(tipCurs == CursTypes.CursInfo) {
+            if(tipCurs == CursTypes.CURS_INFO) {
                 CursInformatica cursInfo = new CursInformatica(nume, categorie);
                 cursuriList.add(cursInfo);
             }
-            if(tipCurs == CursTypes.CursDezvoltare) {
+            if(tipCurs == CursTypes.CURS_DEZVOLTARE) {
                 CursDezvoltare cursDezvoltare = new CursDezvoltare(nume, categorie);
                 cursuriList.add(cursDezvoltare);
             }

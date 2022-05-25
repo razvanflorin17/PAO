@@ -1,7 +1,7 @@
 package Enums;
 
 public enum CursTypes {
-    CursMate,
-    CursInfo,
-    CursDezvoltare,
+    CURS_MATE,
+    CURS_INFO,
+    CURS_DEZVOLTARE,
 }

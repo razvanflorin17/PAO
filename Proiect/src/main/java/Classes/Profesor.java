@@ -10,6 +10,13 @@ public class Profesor {
     private final int rating;
     private PriorityQueue<Curs> cursuri = new PriorityQueue<>(Comparator.comparing(Curs::getNume));
 
+    public Profesor(String nume) {
+        this.nume = nume;
+        this.prenume = null;
+        this.varsta = 0;
+        this.rating = 0;
+    }
+
     public Profesor(String nume, String prenume, int varsta, int rating) {
         this.nume = nume;
         this.prenume = prenume;

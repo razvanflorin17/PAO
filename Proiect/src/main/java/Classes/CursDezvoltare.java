@@ -8,13 +8,13 @@ public class CursDezvoltare extends Curs{
     public CursDezvoltare(String nume, String categorie) {
         super(nume);
         this.categorie = categorie;
-        this.tipCurs = CursTypes.CursDezvoltare;
+        this.tipCurs = CursTypes.CURS_DEZVOLTARE;
     }
 
     public CursDezvoltare(Curs curs, String categorie) {
         super(curs);
         this.categorie = categorie;
-        this.tipCurs = CursTypes.CursDezvoltare;
+        this.tipCurs = CursTypes.CURS_DEZVOLTARE;
     }
 
     public String getCategorie() {
